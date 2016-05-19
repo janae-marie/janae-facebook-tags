@@ -21,7 +21,7 @@ function my_facebook_tags() {
 
     <?php
       if ( has_post_thumbnail() ) :
-        $image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' );
+        $image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium' );
     ?>
       <meta property="og:image" content="<?php echo $image[0]; ?>"/>
     <?php endif; ?>
